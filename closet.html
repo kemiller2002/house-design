@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designer Closet Plan</title>
+  <style>
+    :root{
+      --bg:#f6f2eb;
+      --paper:#fffdf9;
+      --ink:#2b241f;
+      --muted:#6c6258;
+      --line:#ddd3c7;
+      --accent:#7a5a3a;
+      --accent2:#b4895d;
+      --soft:#efe7dc;
+      --good:#315c46;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f8f4ed 0%, #f3eee6 100%);
+      line-height:1.5;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:32px 24px 64px}
+    .hero{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:32px;
+      box-shadow:0 10px 30px rgba(0,0,0,.05);
+    }
+    h1,h2,h3{margin:0 0 12px}
+    h1{font-size:38px;line-height:1.1}
+    h2{font-size:24px;margin-top:28px}
+    h3{font-size:18px;margin-top:0}
+    p{margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:var(--soft);
+      border:1px solid var(--line);
+      color:var(--accent);
+      font-size:13px;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+    .section{margin-top:24px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 8px 22px rgba(0,0,0,.04);
+    }
+    .price{font-weight:700;color:var(--good)}
+    .links a, a{
+      color:#7a4b17;
+      text-decoration:none;
+    }
+    a:hover{text-decoration:underline}
+    ul{margin:10px 0 0 18px;padding:0}
+    li{margin:4px 0}
+    .layout{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      overflow:auto;
+    }
+    .strip{display:grid;grid-template-columns:1.1fr 1.4fr 0.8fr 1fr 0.8fr;gap:10px;margin-top:14px;min-width:850px}
+    .zone{
+      min-height:120px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      padding:14px;
+      background:#fff;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .zone strong{font-size:16px}
+    .tone1{background:#f0e7dc}
+    .tone2{background:#f7efe4}
+    .tone3{background:#efe6d8}
+    .tone4{background:#f8f5ef}
+    .tone5{background:#ece6de}
+    .budget{
+      display:grid;grid-template-columns:1.2fr 1fr;gap:18px;
+    }
+    table{width:100%;border-collapse:collapse;background:var(--paper);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{background:var(--soft)}
+    tr:last-child td{border-bottom:none}
+    .small{font-size:13px}
+    .footer-note{margin-top:20px;font-size:13px;color:var(--muted)}
+    @media (max-width: 840px){
+      .grid,.budget{grid-template-columns:1fr}
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="pill">No built-ins</span>
+        <span class="pill">Designer approach</span>
+        <span class="pill">Target budget: about $12k</span>
+        <span class="pill">Trying to look like a $20k room</span>
+      </div>
+      <h1>Closet / Dressing Room Plan</h1>
+      <p class="muted">Built around a warm, furniture-forward look instead of a closet-system look. The intent is a room that feels composed and high-end, with enough open space to breathe.</p>
+      <p><strong>Core idea:</strong> one hero dresser, one supporting dresser, one wardrobe, one closed linen cabinet, one open hanging zone, one shoe zone, one luggage zone, mirror and warm lighting, plus a small hat rail on the wall.</p>
+    </div>
+
+    <div class="section layout">
+      <h2>Suggested layout</h2>
+      <p class="muted">This is the visual composition, left to right along the long wall.</p>
+      <div class="strip">
+        <div class="zone tone1">
+          <strong>Wardrobe zone</strong>
+          <div class="small">Closed storage for long-hang items and overflow hanging.</div>
+        </div>
+        <div class="zone tone2">
+          <strong>Center focal wall</strong>
+          <div class="small">Hero dresser + mirror + supporting dresser.</div>
+        </div>
+        <div class="zone tone3">
+          <strong>Linen cabinet</strong>
+          <div class="small">Closed storage so towels and bedding stay hidden.</div>
+        </div>
+        <div class="zone tone4">
+          <strong>Open hanging + hats</strong>
+          <div class="small">Boutique feel. Add a wood or black hat rail nearby.</div>
+        </div>
+        <div class="zone tone5">
+          <strong>Shoes + luggage</strong>
+          <div class="small">Closed shoe cabinet plus simple luggage shelf or cubby.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section grid">
+      <div class="card">
+        <h2>Why this looks expensive</h2>
+        <ul>
+          <li>Hierarchy: one main dresser, one supporting piece.</li>
+          <li>Mix of closed and open storage so the room does not feel flat.</li>
+          <li>Closed linen storage keeps visual clutter down.</li>
+          <li>Open hanging section adds a boutique / dressing-room feel.</li>
+          <li>A mirror and warm light make the room feel deliberate, not improvised.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Finish direction</h2>
+        <ul>
+          <li><strong>Best bet:</strong> walnut or warm oak family.</li>
+          <li>Try to keep all large pieces in the same wood family.</li>
+          <li>Black accents are fine for hooks, frames, or lamp bases.</li>
+          <li>Brass can work, but keep it subtle.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Shopping list</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1) Hero dresser</h3>
+          <p><strong>Recommended:</strong> <a href="https://www.roomandboard.com/catalog/bedroom/dressers/emerson-dressers/499520?CHAR_499520_EMERSON_COLL_WOOD=WA&CHAR_499520_EMERSON_COLL_HDWR=SS&srsltid=AfmBOop0Vqs-RCWpb2wQu_fwPJEfdGGN1pKhVrpePnRSUepN6ldk2FlyNLg" target="_blank" rel="noopener">Room &amp; Board Emerson Dresser</a></p>
+          <p class="price">Approx. $2,500 to $3,200</p>
+          <p class="small">Use this as the anchor piece. Photos are on the product page.</p>
+          <p class="links small"><a href="https://www.roomandboard.com/catalog/bedroom/dressers/emerson-dressers/499520?CHAR_499520_EMERSON_COLL_WOOD=WA&CHAR_499520_EMERSON_COLL_HDWR=SS&srsltid=AfmBOop0Vqs-RCWpb2wQu_fwPJEfdGGN1pKhVrpePnRSUepN6ldk2FlyNLg" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+        <div class="card">
+          <h3>Alternate hero dresser</h3>
+          <p><strong>Alternate:</strong> <a href="https://www.crateandbarrel.com/tate-walnut-9-drawer-dresser/s113922?storeid=450&a=784&campaignid=12425629646&adgroupid=116938612223&targetid=aud-1682520785652%3Adsa-396636736303&adpos=&creative=589501195607&device=m&matchtype=&network=g&gclsrc=aw.ds&gad_source=1&gbraid=0AAAAAD-RWKga6cUIKOuWMezl9DQhBhBbq&gclid=CjwKCAiA1eO7BhATEiwAm0Ee-BYX_t6Qsyidr4JD2A6D8Q0hg03Jhh5WQcnp2QR-MCkBKtgUvGj0CBoCM1sQAvD_BwE&bvstate=pg%3A2%2Fct%3Ar" target="_blank" rel="noopener">Crate &amp; Barrel Tate 68&quot; 9-Drawer Dresser</a></p>
+          <p class="price">Approx. $1,800 to $2,000</p>
+          <p class="small">Cleaner and slightly more budget-friendly. Photos are on the product page.</p>
+          <p class="links small"><a href="https://www.crateandbarrel.com/tate-walnut-9-drawer-dresser/s113922?storeid=450&a=784&campaignid=12425629646&adgroupid=116938612223&targetid=aud-1682520785652%3Adsa-396636736303&adpos=&creative=589501195607&device=m&matchtype=&network=g&gclsrc=aw.ds&gad_source=1&gbraid=0AAAAAD-RWKga6cUIKOuWMezl9DQhBhBbq&gclid=CjwKCAiA1eO7BhATEiwAm0Ee-BYX_t6Qsyidr4JD2A6D8Q0hg03Jhh5WQcnp2QR-MCkBKtgUvGj0CBoCM1sQAvD_BwE&bvstate=pg%3A2%2Fct%3Ar" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+
+        <div class="card">
+          <h3>2) Supporting dresser</h3>
+          <p><strong>Recommended:</strong> <a href="https://www.crateandbarrel.com/tate-32-walnut-wood-5-drawer-tall-dresser/s113981?srsltid=AfmBOorxxljGleMung0Xtw2ENFD0GOvSzPOtx1KFajZw0jZhw-ydfQPT7QY" target="_blank" rel="noopener">Crate &amp; Barrel Tate 5-Drawer Tall Dresser</a></p>
+          <p class="price">Approx. $1,300 to $1,400</p>
+          <p class="small">Supporting piece. Works best when the main dresser is the star.</p>
+          <p class="links small"><a href="https://www.crateandbarrel.com/tate-32-walnut-wood-5-drawer-tall-dresser/s113981?srsltid=AfmBOorxxljGleMung0Xtw2ENFD0GOvSzPOtx1KFajZw0jZhw-ydfQPT7QY" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+        <div class="card">
+          <h3>3) Wardrobe zone</h3>
+          <p><strong>Value solid-wood option:</strong> <a href="https://grainwoodfurniture.com/products/shaker-3-door-wardrobe?variant=21066727681&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOop7S-rRK8P9xknvWdXrzBJMFoOV01aOY8Ka7VPpLqFWskepkAAUTzo" target="_blank" rel="noopener">Grain Wood Furniture Shaker 3-Door Wardrobe</a></p>
+          <p class="price">Approx. $900</p>
+          <p class="small">A practical way to get solid wood into the plan without blowing the budget.</p>
+          <p class="links small"><a href="https://grainwoodfurniture.com/products/shaker-3-door-wardrobe?variant=21066727681&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOop7S-rRK8P9xknvWdXrzBJMFoOV01aOY8Ka7VPpLqFWskepkAAUTzo" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+
+        <div class="card">
+          <h3>4) Linen cabinet</h3>
+          <p><strong>Recommended:</strong> <a href="https://www.roomandboard.com/catalog/storage-and-entryway/storage-cabinets/emerson-storage-cabinets/698452?CHAR_698452_EMERSON_COLL_HDWR=NS&CHAR_698452_EMERSON_COLL_WOOD=WHT&srsltid=AfmBOorzsenAApLj5OmUhnObg-tEotyjSvvRix8TAyGvZN8GqmrtCHh9S3U" target="_blank" rel="noopener">Room &amp; Board Emerson Storage Cabinet</a></p>
+          <p class="price">Approx. $1,900 to $2,800 depending on size/configuration</p>
+          <p class="small">Closed storage is the right move for towels and bedding.</p>
+          <p class="links small"><a href="https://www.roomandboard.com/catalog/storage-and-entryway/storage-cabinets/emerson-storage-cabinets/698452?CHAR_698452_EMERSON_COLL_HDWR=NS&CHAR_698452_EMERSON_COLL_WOOD=WHT&srsltid=AfmBOorzsenAApLj5OmUhnObg-tEotyjSvvRix8TAyGvZN8GqmrtCHh9S3U" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+        <div class="card">
+          <h3>5) Open hanging section</h3>
+          <p><strong>Recommended:</strong> <a href="https://www.zarahome.com/us/acacia-wood-clothes-rack-l47564077?pelement=484961452&colorId=700&sizeId=99&utm_source=chatgpt.com" target="_blank" rel="noopener">Zara Home Acacia Wood Clothes Rack</a></p>
+          <p class="price">Approx. $229</p>
+          <p class="small">This is what gives the room breathing room and the boutique feel.</p>
+          <p class="links small"><a href="https://www.zarahome.com/us/acacia-wood-clothes-rack-l47564077?pelement=484961452&colorId=700&sizeId=99&utm_source=chatgpt.com" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+
+        <div class="card">
+          <h3>6) Shoe storage</h3>
+          <p><strong>Cleaner look:</strong> <a href="https://www.muji.us/products/oak-shoe-cabinet-kea3cc3a?variant=45741706019006&utm_source=google&utm_medium=cpc&utm_campaign=US%20Shopify%20Feed%20-%20Google%20English&utm_content=%5BHD%5D%20Oak%20Shoe%20Cabinet&srsltid=AfmBOoosc3PR08Kn27m3yfNbsMMxenLqkLHlHPlA8Dbn-LnPNK_NhT77rx" target="_blank" rel="noopener">MUJI Oak Shoe Cabinet</a></p>
+          <p class="price">Approx. $500</p>
+          <p class="small">More restrained and probably easier to integrate visually than a chunkier cabinet.</p>
+          <p class="links small"><a href="https://www.muji.us/products/oak-shoe-cabinet-kea3cc3a?variant=45741706019006&utm_source=google&utm_medium=cpc&utm_campaign=US%20Shopify%20Feed%20-%20Google%20English&utm_content=%5BHD%5D%20Oak%20Shoe%20Cabinet&srsltid=AfmBOoosc3PR08Kn27m3yfNbsMMxenLqkLHlHPlA8Dbn-LnPNK_NhT77rx" target="_blank" rel="noopener">View item + photos</a></p>
+        </div>
+        <div class="card">
+          <h3>7) Hat rail</h3>
+          <p><strong>Recommendation:</strong> a simple wood peg rail or matte-black hook rail mounted near the open hanging section.</p>
+          <p class="price">Approx. $50 to $200</p>
+          <p class="small">This is the one small install that is worth doing. It adds personality and keeps hats from becoming clutter.</p>
+        </div>
+
+        <div class="card">
+          <h3>8) Mirror + warm lamp</h3>
+          <p><strong>Recommendation:</strong> one large mirror centered between the dressers and one warm lamp or warm accent light.</p>
+          <p class="price">Approx. $300 to $800 combined</p>
+          <p class="small">This is one of the biggest value moves in the whole room.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section budget">
+      <div>
+        <h2>Budget snapshot</h2>
+        <table>
+          <tr><th>Item</th><th>Estimated cost</th></tr>
+          <tr><td>Hero dresser</td><td>$2,000–$3,200</td></tr>
+          <tr><td>Supporting dresser</td><td>$1,300–$1,400</td></tr>
+          <tr><td>Wardrobe</td><td>$900</td></tr>
+          <tr><td>Linen cabinet</td><td>$1,900–$2,800</td></tr>
+          <tr><td>Open hanging rack</td><td>$229</td></tr>
+          <tr><td>Shoe cabinet</td><td>$500</td></tr>
+          <tr><td>Mirror + warm lighting</td><td>$300–$800</td></tr>
+          <tr><td>Hat rail</td><td>$50–$200</td></tr>
+          <tr><th>Total</th><th>About $7,179–$10,829 before tax and delivery</th></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h2>How to push it toward the “looks like $20k” version</h2>
+        <ul>
+          <li>Choose walnut or warm oak and stay disciplined.</li>
+          <li>Do not add extra furniture unless there is a clear reason.</li>
+          <li>Keep linens closed and hats displayed.</li>
+          <li>Use the open rack for only the best-looking pieces, not everything.</li>
+          <li>Add a warm lamp and a proper mirror before adding more storage.</li>
+        </ul>
+        <p class="footer-note">Delivery, tax, and any local assembly are not included in the numbers above.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
